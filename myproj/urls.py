@@ -19,7 +19,11 @@ from django.urls import path
 from myapp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.userview),
+    path('user',views.userview,name='user'),
     path('success',views.successview,name="success"),
+    path('',views.indexview,name="index"),
+    path('login',views.loginview,name="login"),
+    path('afterlogin',views.afterloginview,name="afterlogin"),
+    path('logout',views.logoutview,name="logout"),
 ]
 
