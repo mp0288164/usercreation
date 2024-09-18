@@ -9,9 +9,8 @@ def userview(request):
             return redirect('success')  # Redirect to a success page
     else:
         form = UserForm()
-
     return render(request, 'user_reg.html', {'form': form})
 
 def successview(request):
-    return render(request,'success.html')
+    return render(request, 'success.html')
       
